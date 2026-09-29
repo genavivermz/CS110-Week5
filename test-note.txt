@@ -1,0 +1,2 @@
+Tested: new 3d page setup, adding more objects
+Result: created colorful setup with interactive controls

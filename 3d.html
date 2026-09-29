@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CS110 Concept Map | Technology Field Guide</title>
+  <meta name="description" content="Explore the first four weeks of CS110 as an interactive 3D concept map.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="scene-page">
+  <main class="scene-shell">
+    <header class="scene-header">
+      <a class="back-link" href="index.html">&larr; Technology Field Guide</a>
+      <p class="eyebrow">CS110 / WEEKS 01&ndash;04</p>
+      <h1>Ideas in orbit<span>.</span></h1>
+      <p class="scene-description" id="scene-description">
+        Four weeks of technology, connected as one learning path. Select a point to inspect its theme.
+      </p>
+    </header>
+
+    <section class="concept-stage" aria-label="Interactive 3D concept map">
+      <canvas id="renderCanvas" tabindex="0" aria-label="Interactive 3D map of four CS110 weekly themes" aria-describedby="scene-description scene-controls">Interactive 3D concept map</canvas>
+      <p id="scene-status" class="scene-status" role="status" aria-live="polite">Preparing the concept map...</p>
+      <div class="stage-index" aria-hidden="true"><span>01</span><span>02</span><span>03</span><span>04</span></div>
+    </section>
+
+    <footer class="scene-footer">
+      <div class="concept-readout" aria-live="polite">
+        <p class="eyebrow" id="concept-week">WEEK 01</p>
+        <h2 id="concept-title">Mindset and Support</h2>
+        <p id="concept-summary">A strong learning practice starts with curiosity, resilience, and knowing where to find support.</p>
+      </div>
+      <div class="scene-actions">
+        <p id="scene-controls">Drag to orbit. Use arrow keys to look around and scroll to zoom.</p>
+        <button id="reset-view" type="button" aria-label="Reset 3D view" title="Reset view" disabled>Reset view</button>
+      </div>
+    </footer>
+  </main>
+
+  <script type="module" src="scene.js"></script>
+</body>
+</html>
